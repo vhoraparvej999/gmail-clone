@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* header strat */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left .fa-solid{
+    padding: 10px;
+    cursor: pointer;
+}
+.header-left img{
+    object-fit: contain;
+    height: 80px;
+    margin-left: 5px;
+}
+.header-left .fa-solid{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-middel{
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+.header-middel .fa-solid{
+    color: gray ;
+}
+.header-middel input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+}
+.header-right .fa-solid{
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* header ends */
+
+/* sidebars */
+.sidebar{
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 20px;
+}
+.sidebar-compose{
+    margin: 15px 0px 15px 10px;
+    text-transform: capitalize;
+    color: gray;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+}
+.sidebar-compose .fa-solid{
+    margin-right: 5px;
+}
+.sidebaroption{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #818181;
+    cursor: pointer;
+}
+.sidebaroption .fa-solid{
+    margin-right: 5px;
+}
+.sidebaroption h3{
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sidebaroption:hover,
+.sidebaroption:hover h3,
+.sidebaroption:hover .fa-solid,
+.sidebaroption-active,
+.sidebaroption-active h3,
+.sidebaroption-active .fa-solid{
+    background-color: #fcecec;
+    color: #c04b37;
+    font-weight: 800;
+}
+.sidebar-footer{
+    display: flex;
+    justify-content: center;
+}
+.sidebar-footer .fa-solid{
+    margin: 7px;
+    cursor: pointer;
+    color: #818181;
+}
+
+/* main body */
+.main-body{
+    display: flex;
+    height: 100vh;
+}
+.emaillist{
+    flex: 1;
+    overflow: scroll;
+}
+.emaillist-setting{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+    padding: 8px;
+}
+.emalilist-settingleft{
+    display: flex;
+    align-items: center;
+}
+.emalilist-settingleft .fa-solid{
+    margin: 5px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.emalilist-settingright{
+    display: flex;
+    align-items: center;
+}
+.emalilist-settingright .fa-solid{
+    margin: 5px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color: gray;
+    border-width: 0;
+}
+.emaillist-sections{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+.section-selected{
+    background-color: whitesmoke;
+    border-width: 3px;
+    color: red;
+    border-bottom: 3px solid red;
+}
+.section-selected .fa-solid{
+    color: red;
+}
+.section:hover{
+    background-color: whitesmoke;
+    border-width: 3px;
+}
+.section h4{
+    margin-left: 15px;
+    font-size: 14px;
+}

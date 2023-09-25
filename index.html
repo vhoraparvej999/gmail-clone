@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icon link -->
+    <script src="https://kit.fontawesome.com/7ba28808d5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Gmail Clone</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="header">
+        <div class="header-left">
+            <i class="fa-solid fa-bars"></i>
+            <img src="https://i.pinimg.com/originals/ae/47/fa/ae47fa9a8fd263aa364018517020552d.png" alt="">
+        </div>
+        <div class="header-middel">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search mail">
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="header-right">
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>     
+    </div>
+    <!-- header ends -->
+
+    <!-- main body starts -->
+    <div class="main-body">
+        <!-- sidebar strat -->
+        <div class="sidebar">
+            <button class="sidebar-compose"><i class="fa-solid fa-plus"></i>Compose</button>
+            <div class="sidebaroption sidebaroption-active">
+                <i class="fa-solid fa-inbox" style="color: #ff0000;"></i>
+                <h3>inbox</h3>
+            </div>
+            <div class="sidebaroption">
+                <i class="fa-solid fa-star" style="color:#635d5d;"></i>
+                <h3>Starred</h3>
+            </div>
+            <div class="sidebaroption">
+                <i class="fa-brands fa-safari" style="color: #c0c0c0;"></i>
+                <h3>Snoozed</h3>
+            </div>
+            <div class="sidebaroption">
+                <i class="fa-solid fa-tag" style="color: #635d5d;"></i>
+                <h3>Important</h3>
+            </div>
+            <div class="sidebaroption">
+                <i class="fa-solid fa-paper-plane" style="color:#635d5d;"></i>
+                <h3>Sent</h3>
+            </div>
+            <div class="sidebaroption">
+                <i class="fa-solid fa-note-sticky" style="color:#635d5d;"></i>
+                <h3>Drafts</h3>
+            </div>
+            <div class="sidebaroption">
+                <i class="fa-solid fa-chevron-down" style="color: #c0c0c0;"></i>
+                <h3>More</h3>
+            </div>
+            <div class="sidebar-footer">
+                <div class="footer-icon">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-comments"></i>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+            </div>
+        </div>
+    
+        <!-- sidebar ends -->
+
+        <!-- email list starts -->
+        <div class="emaillist">
+            <!-- settings starst -->
+            <div class="emaillist-setting">
+                <div class="emalilist-settingleft">
+                    <input type="checkbox" />
+                    <i class="fa-solid fa-caret-down" style="color: #c0c0c0;"></i>
+                    <i class="fa-solid fa-rotate-right" style="color: #c0c0c0;"></i>
+                    <i class="fa-solid fa-angles-right" style="color: #c0c0c0;"></i>
+                </div>
+                <div class="emalilist-settingright">
+                    <i class="fa-solid fa-chevron-left" style="color: #c0c0c0;"></i>
+                    <i class="fa-solid fa-chevron-right" style="color: #c0c0c0;"></i>
+                    <i class="fa-solid fa-keyboard"></i>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+            <!-- setting end -->
+
+            <!-- section strats -->
+            <div class="emaillist-sections">
+                <div class="section section-selected">
+                    <i class="fa-solid fa-inbox"></i>
+                    <h4>primary</h4>
+                </div>
+                <div class="section">
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Social</h4>
+                </div>
+                <div class="section">
+                    <i class="fa-solid fa-tag"></i>
+                    <h4>Promotions</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
