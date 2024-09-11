@@ -1,66 +1,70 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-/* header strat */
-.header{
+
+/* header */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid whitesmoke
+    padding: 10px;
+    border-bottom: 1px solid whitesmoke;
 }
-.header-left{
+
+.header-left {
     display: flex;
     align-items: center;
 }
-.header-left .fa-solid{
-    padding: 10px;
-    cursor: pointer;
-}
-.header-left img{
-    object-fit: contain;
-    height: 80px;
-    margin-left: 5px;
-}
-.header-left .fa-solid{
+
+.header-left .fa-solid {
     padding: 10px;
     cursor: pointer;
 }
 
-.header-middel{
+.header-left img {
+    object-fit: contain;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.header-middle {
     display: flex;
     flex: 0.7;
     align-items: center;
     background-color: whitesmoke;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
-.header-middel .fa-solid{
-    color: gray ;
+
+.header-middle .fa-solid {
+    color: gray;
 }
-.header-middel input{
+
+.header-middle input {
     border: none;
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     outline: none;
     font-size: medium;
     background-color: transparent;
 }
-.header-right .fa-solid{
+
+.header-right .fa-solid {
     padding: 10px;
     cursor: pointer;
 }
 
-/* header ends */
-
-/* sidebars */
-.sidebar{
+/* sidebar */
+.sidebar {
     flex: 0.3;
     max-width: 300px;
     padding-right: 20px;
 }
-.sidebar-compose{
-    margin: 15px 0px 15px 10px;
+
+.sidebar-compose {
+    margin: 15px 0;
     text-transform: capitalize;
     color: gray;
     padding: 15px;
@@ -72,10 +76,12 @@
     border: none;
     box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
 }
-.sidebar-compose .fa-solid{
+
+.sidebar-compose .fa-solid {
     margin-right: 5px;
 }
-.sidebaroption{
+
+.sidebaroption {
     display: flex;
     align-items: center;
     height: 40px;
@@ -85,45 +91,38 @@
     color: #818181;
     cursor: pointer;
 }
-.sidebaroption .fa-solid{
-    margin-right: 5px;
-}
-.sidebaroption h3{
-    flex: 1;
-    margin-left: 10px;
-    font-size: 14px;
-    font-weight: 400;
-}
+
 .sidebaroption:hover,
 .sidebaroption:hover h3,
-.sidebaroption:hover .fa-solid,
-.sidebaroption-active,
-.sidebaroption-active h3,
-.sidebaroption-active .fa-solid{
+.sidebaroption:hover .fa-solid {
     background-color: #fcecec;
     color: #c04b37;
     font-weight: 800;
 }
-.sidebar-footer{
+
+.sidebar-footer {
     display: flex;
     justify-content: center;
 }
-.sidebar-footer .fa-solid{
+
+.sidebar-footer .fa-solid {
     margin: 7px;
     cursor: pointer;
     color: #818181;
 }
 
 /* main body */
-.main-body{
+.main-body {
     display: flex;
     height: 100vh;
 }
-.emaillist{
+
+.emaillist {
     flex: 1;
     overflow: scroll;
 }
-.emaillist-setting{
+
+.emaillist-setting {
     position: sticky;
     top: 0;
     display: flex;
@@ -133,26 +132,29 @@
     z-index: 999;
     padding: 8px;
 }
-.emalilist-settingleft{
-    display: flex;
-    align-items: center;
-}
-.emalilist-settingleft .fa-solid{
-    margin: 5px;
-    cursor: pointer;
-    padding: 0 5px;
-}
-.emalilist-settingright{
-    display: flex;
-    align-items: center;
-}
-.emalilist-settingright .fa-solid{
+
+.emalilist-settingleft .fa-solid {
     margin: 5px;
     cursor: pointer;
     padding: 0 5px;
 }
 
-.section{
+.emalilist-settingright .fa-solid {
+    margin: 5px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.emaillist-sections {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+
+.section {
     display: flex;
     align-items: center;
     border-bottom-width: 2px;
@@ -162,28 +164,58 @@
     color: gray;
     border-width: 0;
 }
-.emaillist-sections{
-    display: flex;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    border-bottom: 1px solid whitesmoke;
-    z-index: 999;
-}
-.section-selected{
+
+.section-selected {
     background-color: whitesmoke;
     border-width: 3px;
     color: red;
     border-bottom: 3px solid red;
 }
-.section-selected .fa-solid{
-    color: red;
-}
-.section:hover{
+
+.section:hover {
     background-color: whitesmoke;
     border-width: 3px;
 }
-.section h4{
+
+.section h4 {
     margin-left: 15px;
     font-size: 12px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header-middle {
+        flex: 1;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-body {
+        flex-direction: column;
+    }
+
+    .header-right {
+        flex: 1;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-left img {
+        height: 30px;
+    }
+
+    .header-middle input {
+        font-size: smaller;
+    }
+
+    .header-right .fa-solid {
+        padding: 5px;
+    }
+
+    .section h4 {
+        font-size: 10px;
+    }
 }
